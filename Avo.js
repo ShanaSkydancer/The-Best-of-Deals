@@ -6,12 +6,24 @@ var avosList = [
 ];
 
 module.exports = function(avos){
+  var avoInput = {};
+  var mostQuanity = 0;
+  var mostPrice = 0;
 
   	for(var i = 0; i < avos.length; i++){
-      	var current = avos[i]
+      	var currentAvo = avos[i]
       	var currenQuantity = current.Quantity;
       	var currentPrice = current.Price;
 
-        if(currenQuantity > avoQuantity){
+        // for(current in avoInput){
+        //   var currentQuanity = current;
+        //   var currentPrice = avoInput[currentQuanity];
 
-        }
+          if(mostPrice < currentPrice){
+                mostPrice = currentPrice;
+                mostQuanity = currentQuanity;
+            }
+      // }
+  }
+  return mostPrice;
+}
