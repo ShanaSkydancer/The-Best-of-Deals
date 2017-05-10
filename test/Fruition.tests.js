@@ -33,6 +33,6 @@ var fruitList = {
 describe('The Fruition function', function(){
 
     it('should Fruition', function(){
-        assert.equal(Fruition('answer'), answer);
+        assert.deepEqual(Fruition('answer'), answer);
     });
 });

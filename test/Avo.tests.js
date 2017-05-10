@@ -2,15 +2,26 @@ var Avo = require('../Avo');
 const assert = require('assert')
 
 var avosList = [
-{Quantity : 1, Price: 3.00},
-{Quantity : 2, Price: 7.00},
-{Quantity : 3, Price: 10.00},
-{Quantity : 5, Price: 14.50},
+{quantity : 1, price: 3.00},
+{quantity : 2, price: 7.00},
+{quantity : 3, price: 10.00},
+{quantity : 5, price: 14.50}
 ];
 
-describe('The Avo function', function(){
+var avoDeals = [
+  {deal, price: 3.00},
+  {deal, price: 3.50},
+  {deal, price: 3.33},
+  {deal, price: 2.90}
+]
+
+var expectedResults = [
+  {deal, price: 2.90}
+]
+
+describe('The find cheapest Avo function', function(){
 
     it('should Avo properly', function(){
-        assert.equal(Avo(avosList), 14.50);
+        assert.deepEqual(Avo(avoDeals), expectedResults);
     });
 });
