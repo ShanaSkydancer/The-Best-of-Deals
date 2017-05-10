@@ -1,0 +1,19 @@
+{
+  "name": "The-Best-of-Deals",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Avo.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node_modules/.bin/mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^3.3.0"
+  }
+}
